@@ -1,0 +1,10 @@
+ <html>
+        <head>
+            <title>Yarik's Blog</title>
+        </head>
+        <body>
+            <p>Hi there!</p>
+            <p>It works!</p>
+            <a href="https://www.facebook.com/sikora.jaroslav">link</a> 
+        </body>
+    </html>
