@@ -1,11 +1,20 @@
- <html>
+    <html>
         <head>
-            <title>Yarik's Blog</title>
+            <title>Only true news</title>
         </head>
         <body>
-            <p>Hi there!</p>
-            <p>It works!</p>
-            <strong>Jarik on FaceBook</strong>
-            <a href="https://www.facebook.com/sikora.jaroslav">link</a> 
+            <div>
+                <h1><a href="">Jarik FakeNews</a></h1>
+            </div>
+
+            {% for post in posts %}
+                <div>
+                    <p>published: {{ post.published_date }}</p>
+                    <h1><a href="">{{ post.title }}</a></h1>
+                    <p>{{ post.text|linebreaks }}</p>
+                </div>
+            {% endfor %}
+            </div>
         </body>
     </html>
+
