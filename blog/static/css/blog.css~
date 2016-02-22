@@ -1,5 +1,5 @@
     .page-header {
-        background-color: #ff9400;
+        background-color: #1B7896;
         margin-top: 0;
         padding: 20px 20px 20px 40px;
     }
@@ -45,4 +45,22 @@
     .post h1 a, .post h1 a:visited {
         color: #000000;
     }
+
+.btn-group,
+.btn-group-vertical {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle; // match .btn alignment given font-size hack above
+  > .btn {
+    position: relative;
+    float: left;
+    // Bring the "active" button to the front
+    &:hover,
+    &:focus,
+    &:active,
+    &.active {
+      z-index: 2;
+    }
+  }
+}
 
